@@ -10,7 +10,7 @@ import 'package:grocery_app/core/utils/snack_bar.dart';
 import 'package:grocery_app/features/auth/model/user_model.dart';
 import 'package:grocery_app/features/auth/service/auth_service.dart';
 import 'package:grocery_app/features/auth/widgets/custom_text_field.dart';
-import 'package:grocery_app/features/auth/widgets/custom_text_singin.dart';
+import 'package:grocery_app/core/constants/custom_text_poppins.dart';
 import 'package:grocery_app/features/auth/widgets/header_authentication.dart';
 import 'package:grocery_app/features/auth/widgets/password_field.dart';
 import 'package:grocery_app/features/auth/widgets/show_gratats.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app/features/onboarding/widget/custom_text.dart';
+import 'package:grocery_app/features/onboarding/widget/custom_text_inter.dart';
 
 class Onboarding1 extends StatelessWidget {
   const Onboarding1({super.key});

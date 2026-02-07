@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app/features/auth/model/user_model.dart';
+import 'package:grocery_app/features/auth/service/local_storage.dart';
 import 'package:grocery_app/features/auth/widgets/show_gratats.dart';
 
 Future<void> createAccount(BuildContext context, UserModel userModel) async {
@@ -17,7 +18,15 @@ Future<void> createAccount(BuildContext context, UserModel userModel) async {
     'createdAt': FieldValue.serverTimestamp(),
   });
 
-  showCongrats(context: context, name: userModel.fullName);
+  await LocalStorage().saveLogin(
+    userId: user.uid,
+    userName: userModel.fullName,
+    userEmail: userModel.email!,
+    isLoggedIn: true,
+  );
+  final UserName = await LocalStorage().getName();
+
+  showCongrats(context: context, name: UserName!);
 }
 
 Future<void> signIn(UserModel userModel) async {

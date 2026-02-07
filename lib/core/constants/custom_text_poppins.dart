@@ -2,9 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextinSign extends StatelessWidget {
-  const CustomTextinSign({super.key, required this.text, required this.color});
+  CustomTextinSign({
+    super.key,
+    required this.text,
+    required this.color,
+    this.fontSize = 16,
+  });
   final String text;
   final Color color;
+  final double? fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +18,7 @@ class CustomTextinSign extends StatelessWidget {
       text,
       style: GoogleFonts.poppins(
         color: color,
-        fontSize: 16,
+        fontSize: fontSize,
         fontWeight: FontWeight.w600,
       ),
       textAlign: TextAlign.center,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/core/constants/navigationbar_presention.dart';
 import 'package:grocery_app/features/auth/presentation/login_presentation.dart';
 import 'package:grocery_app/features/auth/presentation/signup_presentation.dart';
+import 'package:grocery_app/features/home/presentation/home_feature.dart';
 import 'package:grocery_app/features/onboarding/onboarding_feature.dart';
 import 'package:grocery_app/features/onboarding/widget/onboarding1.dart';
 import 'package:grocery_app/features/splash_fratures/splash_freatures.dart';
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardingFeature(),
+      home: CustomNavigationBar(),
     );
   }
 }
