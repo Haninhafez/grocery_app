@@ -55,7 +55,7 @@ class _CardLoginState extends State<CardLogin> {
                 return Validators.password(value);
               },
             ),
-            CustomTextinSign(text: "Forget Password?", color: ColorApp.orange),
+            CustomTextPoppins(text: "Forget Password?", color: ColorApp.orange),
             SizedBox(height: 25),
             Align(
               alignment: AlignmentGeometry.bottomCenter,

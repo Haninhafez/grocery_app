@@ -67,7 +67,10 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
               label: "Search",
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/images/cart.svg"),
+              icon: SvgPicture.asset(
+                "assets/images/cart.svg",
+                color: currentIndex == 2 ? ColorApp.orange : ColorApp.grey,
+              ),
               label: "Cart",
             ),
             BottomNavigationBarItem(
@@ -76,7 +79,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                CupertinoIcons.person,
+                CupertinoIcons.profile_circled,
                 size: 30,
                 fontWeight: FontWeight.w600,
               ),

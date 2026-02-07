@@ -83,16 +83,16 @@ class _CardCreateAnAccountState extends State<CardCreateAnAccount> {
                   return Validators.password(userModel.password);
                 },
               ),
-              CustomTextinSign(
+              CustomTextPoppins(
                 text: "By tapping Sign up you accept all ",
                 color: Colors.black,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomTextinSign(text: "Terms", color: ColorApp.primay),
-                  CustomTextinSign(text: " and ", color: Colors.black),
-                  CustomTextinSign(text: "condtion", color: ColorApp.primay),
+                  CustomTextPoppins(text: "Terms", color: ColorApp.primay),
+                  CustomTextPoppins(text: " and ", color: Colors.black),
+                  CustomTextPoppins(text: "condtion", color: ColorApp.primay),
                 ],
               ),
               ControllerButton(
